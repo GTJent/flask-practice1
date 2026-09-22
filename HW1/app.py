@@ -9,3 +9,7 @@ def main_template_render():
 def profile_template_render():
     hobbies = ["게임","영화","유튜브 시청"]
     return render_template("profile.html",myhobbies=hobbies)
+
+@app.route("/greet/<name>")
+def greet_template_render(name):
+    return render_template("greet.html",name=name)
