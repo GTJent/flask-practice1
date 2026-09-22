@@ -1,0 +1,22 @@
+<!-- templates/main.html -->
+<h1>이름 : {{ myname }}</h1>
+<h1>학번 : {{ mynum }}</h1>
+
+<input type="text" id="nameInput" placeholder="이름 입력" />
+<a href="#" onclick="goGreet()">인사 페이지로 이동</a>
+
+<script>
+  function goGreet() {
+    const name = document.getElementById("nameInput").value.trim();
+
+    if (name === "") {
+      alert("이름을 입력하세요.");
+      return;
+    }
+
+    window.location.href = "/greet/" + encodeURIComponent(name);
+  }
+</script>
+
+<a href="/profile">프로필</a>
+<a href="/greet">환영 페이지</a>
