@@ -1,55 +1,6 @@
-# HW2 — Todo 앱에 완료 체크 기능 추가
+<img width="614" height="550" alt="image" src="https://github.com/user-attachments/assets/39037f7d-5987-404f-a48e-7a9dc23edea0" />
+<img width="459" height="556" alt="image" src="https://github.com/user-attachments/assets/186577e8-6853-4fdc-b8bf-ce4fb5c2a7e6" />
 
-- 이름: 김준혁
-- 학번: 22011725
 
-## 제작 과정
-
-L5 66·71·72·73페이지의 코드를 따라 `todo_app`을 작성한다. 이 폴더를 복사하여 `HW2`를 만들고, 82페이지에서 지정한 네 곳만 수정한다.
-
-| 순서 | 파일 | 변경 내용 |
-| --- | --- | --- |
-| 1 | `app.py` | 추가할 때 문자열 대신 `{'text': todo, 'done': False}`를 저장한다. |
-| 2 | `app.py` | `/toggle/<int:index>`에서 범위를 확인하고 `done`을 반전한 뒤 목록으로 이동한다. |
-| 3 | `templates/index.html` | `완료` 링크와 `todo.text`를 출력하고, 완료한 내용에만 `done` 클래스를 적용한다. |
-| 4 | `static/style.css` | 마지막에 `.done` 클래스 한 줄을 추가한다. |
-
-`base.html`과 기존 삭제 기능은 그대로 사용한다. 목록은 `<ul>` 안에서 반복문으로 `<li>`를 생성한다. 각 줄은 `완료 → 할 일 내용 → Delete` 순서이다. 완료한 내용에는 취소선과 회색 글자를 적용하며 링크에는 적용하지 않는다.
-
-## 실행 방법
-
-저장소 맨 위의 가상환경을 공유한다. `HW2` 안에 가상환경이나 `requirements.txt`를 따로 만들지 않는다.
-
-Windows PowerShell에서 `flask-practice1` 폴더를 열고 실행한다.
-
-```powershell
-.\venv\Scripts\Activate.ps1
-cd HW2
-flask --debug run
-```
-
-브라우저에서 http://127.0.0.1:5000/ 에 접속한다.
-
-## 기능
-
-- Add Todo: 입력한 할 일을 추가한다.
-- 완료: 해당 항목의 완료 상태를 반전한다. 다시 누르면 취소선을 제거한다.
-- Delete: 해당 항목을 삭제한다.
-- 새로고침: 서버 실행 중에는 목록과 완료 상태를 유지한다.
-- 서버 종료 및 재시작: 메모리의 목록을 초기화한다. HW2는 DB를 사용하지 않는다.
-
-## 실행 화면 — 제출 전에 실제 캡처 3장 첨부
-
-아래 위치에 본인 PC의 실행 화면을 첨부한다. GitHub에서 이 README를 편집하며 각 제목 아래에 이미지를 끌어다 놓고 저장하면 된다. 강의자료의 예시 이미지를 실행 캡처 대신 사용하지 않는다.
-
-### 1. 할 일 두 개가 있는 목록
-
-`우유 사기`, `웹기반시스템 복습`을 추가한 목록 화면을 첨부한다.
-
-### 2. 하나를 완료한 화면
-
-첫 번째 줄의 `완료`를 눌러 `우유 사기`에만 취소선이 표시된 화면을 첨부한다.
-
-### 3. 새로고침 후 유지된 화면
-
-F5로 새로고침해도 첫 번째 줄의 취소선이 유지된 화면을 첨부한다.
+새로고침 후:
+<img width="959" height="516" alt="image" src="https://github.com/user-attachments/assets/706f4476-b0ab-4c97-86bc-587722161ea6" />
