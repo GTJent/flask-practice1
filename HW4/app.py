@@ -51,7 +51,7 @@ def delete(id):
 # API: L7 2차시 37~43쪽
 api_bp = Blueprint("api", __name__, url_prefix="/api")
 api = Api(api_bp, version="1.0", title="Todo API",
-          description="4장에서 만든 todo 앱의 API", doc="/docs")
+          description="todo 앱의 API", doc="/docs")
 ns = api.namespace("todos", description="할 일 하나하나를 다루는 곳")
 
 todo_model = api.model("Todo", {
